@@ -44,11 +44,15 @@
       "reactCompiler": true
     },
     "extra": {
-      "router": {},
+      "router": {
+        "asyncRoutes": {
+          "web": true
+        }
+      },
       "eas": {
-        "projectId": "6ea729d8-cce3-463a-a1f2-2ef8745d36ea"
+        "projectId": "dcb12b82-9212-4c21-a6d8-9044d28e6482"
       }
     },
-    "owner": "btraversy"
+    "owner": "creative-media-group"
   }
 }
