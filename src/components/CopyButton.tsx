@@ -1,6 +1,6 @@
 import { Meal } from '@/storage/meals';
 import { colors } from '@/styles/global';
-import { Ionicons } from '@expo/vector-icons';
+import Ionicons from "@react-native-vector-icons/ionicons";
 import * as Clipboard from 'expo-clipboard';
 import * as Haptics from 'expo-haptics';
 import { Alert, StyleSheet, Text, TouchableOpacity } from 'react-native';
