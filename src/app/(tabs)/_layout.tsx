@@ -1,8 +1,11 @@
+import { colors } from '@/styles/global';
 import { NativeTabs } from 'expo-router/native-tabs';
 
 export default function TabLayout() {
   return (
     <NativeTabs
+      blurEffect='systemDefault'
+      backgroundColor={colors.background}
     //screenOptions={{
     //  headerShown: false,
     //  tabBarStyle: {
@@ -21,7 +24,10 @@ export default function TabLayout() {
       //    <Ionicons name='home' size={size} color={color} />
       //  ),
       //}}
-      />
+      >
+        <NativeTabs.Trigger.Label>Home</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf={"house"} md={"home"} />
+      </NativeTabs.Trigger>
       <NativeTabs.Trigger
         name='add-meal'
       //options={{
@@ -30,7 +36,10 @@ export default function TabLayout() {
       //    <Ionicons name='add-circle' size={size} color={color} />
       //  ),
       //}}
-      />
+      >
+        <NativeTabs.Trigger.Label>Add Meal</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf={"plus"} md={"add_circle"} />
+      </NativeTabs.Trigger>
       <NativeTabs.Trigger
         name='meals'
       //options={{
@@ -39,7 +48,10 @@ export default function TabLayout() {
       //    <Ionicons name='list' size={size} color={color} />
       //  ),
       //}}
-      />
+      >
+        <NativeTabs.Trigger.Label>All Meals</NativeTabs.Trigger.Label>
+        <NativeTabs.Trigger.Icon sf={"list.clipboard"} md={"list"} />
+      </NativeTabs.Trigger>
     </NativeTabs>
   );
 }
