@@ -30,6 +30,7 @@ export default function TabLayout() {
       </NativeTabs.Trigger>
       <NativeTabs.Trigger
         name='add-meal'
+        role='search'
       //options={{
       //  title: 'Add Meal',
       //  tabBarIcon: ({ color, size }) => (
